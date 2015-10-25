@@ -19,14 +19,15 @@
 </head>
 <body <?php body_class(); ?>>
 
-<!-- wrapper -->
+
 <div class="wrapper">
     <!-- header -->
     <header class="header clear" role="banner">
-        <nav class="nav top-bar" data-topbar role="navigation">
-            <ul class="title-area">
-                <?php html5blank_nav(); ?>
-            </ul>
-        </nav>
+        
+<!--        <nav class="nav top-bar" data-topbar role="navigation" data-options="sticky_on: large">-->
+<!--            <ul class="title-area">-->
+<!--                --><?php //html5blank_nav(); ?>
+<!--            </ul>-->
+<!--        </nav>-->
     </header>
     <!-- /header -->

@@ -286,7 +286,7 @@ function get_home_template() {
 /**
  * Retrieve path of front-page template in current or parent template.
  *
- * Looks for 'front-page.php'. The template path is filterable via the
+ * Looks for 'front-home-page.php'. The template path is filterable via the
  * dynamic {@see '$type_template'} hook, e.g. 'frontpage_template'.
  *
  * @since 3.0.0
@@ -296,7 +296,7 @@ function get_home_template() {
  * @return string Full path to front page template file.
  */
 function get_front_page_template() {
-	$templates = array('front-page.php');
+	$templates = array('front-home-page.php');
 
 	return get_query_template( 'front_page', $templates );
 }
@@ -306,7 +306,7 @@ function get_front_page_template() {
  *
  * Will first look for the specifically assigned page template.
  * Then will search for 'page-{slug}.php', followed by 'page-{id}.php',
- * and finally 'page.php'.
+ * and finally 'home-page.php'.
  *
  * The template path is filterable via the dynamic {@see '$type_template'} hook,
  * e.g. 'page_template'.
@@ -336,7 +336,7 @@ function get_page_template() {
 		$templates[] = "page-$pagename.php";
 	if ( $id )
 		$templates[] = "page-$id.php";
-	$templates[] = 'page.php';
+	$templates[] = 'home-page.php';
 
 	return get_query_template( 'page', $templates );
 }
