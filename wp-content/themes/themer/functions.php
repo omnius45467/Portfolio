@@ -106,6 +106,14 @@ function html5blank_header_scripts()
 //    }
 //}
 
+function html5blank_conditional_scripts()
+{
+    if (is_page('home')) {
+    wp_register_script('JS', get_template_directory_uri() . '/public/js/main.js', array('jquery'), '1.0.0');
+    wp_enqueue_script('JS'); // Enqueue it!
+}
+}
+
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
