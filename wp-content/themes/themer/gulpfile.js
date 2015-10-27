@@ -7,6 +7,7 @@ elixir(function (mix) {
     mix.scripts([
         '../../../js/jquery.min.js',
         '../../../js/bootstrap.min.js',
+        '../../../js/flipcard.js',
         '../../../bower_components/three.js/build/three.js'
     ], 'public/js/main.js');
 
